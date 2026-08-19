@@ -3,3 +3,6 @@ table, th, td {
     border-collapse: collapse;
     padding: 15px;
 }
+input {
+    margin: 5px;
+}
