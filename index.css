@@ -1,8 +1,24 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
+body {
+    background-color: #22223b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-input {
-    margin: 5px;
+h2, h3, h4, p, li, td, label, hr {
+    color: #d8bfb8;
+}
+h1, a, th, caption {
+    color: #f2e9e4;
+}
+caption {
+    margin: 0.5em;
+}
+table, th, td {
+    border: 1px solid #cab1ab;
+    border-collapse: collapse;
+    padding: 1em;
+}
+input, textarea{
+    background-color: #857482;
+    border: solid #857482;
+    color: #f2e9e4;
+    margin: 0.4em;
 }
