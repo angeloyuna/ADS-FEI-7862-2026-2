@@ -1,3 +1,6 @@
+html {
+    box-sizing: border-box;
+}
 body {
     background-color: #22223b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,14 +14,29 @@ h1, a, th, caption {
 caption {
     margin: 0.5em;
 }
-table, th, td {
-    border: 1px solid #cab1ab;
+table {
     border-collapse: collapse;
+    margin: 1em;
+}
+th, td {
+    border: 2px solid #cab1ab;
     padding: 1em;
 }
-input, textarea{
+input, textarea {
     background-color: #857482;
     border: solid #857482;
     color: #f2e9e4;
     margin: 0.4em;
+}
+.destaque {
+    background-color: rgb(41, 41, 71);
+    font-weight: bold;
+}
+.caixa-sagas {
+    background-color:rgb(27, 27, 48);
+    border: 2px solid #cab1ab;
+    padding: 20px;
+    margin: 30px;
+    height: 300px;
+    overflow: auto;
 }
