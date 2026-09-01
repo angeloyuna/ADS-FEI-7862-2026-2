@@ -11,6 +11,9 @@ h2, h3, h4, p, li, td, label, hr {
 h1, a, th, caption {
     color: #f2e9e4;
 }
+a:hover {
+    color: #c9bab1
+}
 caption {
     margin: 0.5em;
 }
@@ -39,4 +42,40 @@ input, textarea {
     margin: 30px;
     height: 300px;
     overflow: auto;
+}
+.caixa-coluna {
+    background-color:rgb(27, 27, 48);
+    border: 2px solid #cab1ab;
+    padding: 20px;
+    margin: 30px;
+    overflow: auto;
+}
+.caixa-coluna h2 {
+    text-align: center;
+}
+.caixa-coluna-midias {
+    float: right;
+    width: 43%;
+}
+.caixa-coluna-personagens {
+    width: 55%;
+}
+.caixa-personagem {
+    display: inline-block;
+    background-color: rgb(30, 30, 53);
+    border: 2px solid #cab1ab;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    width: 320px;
+}
+.personagem {
+    height: 300px;
+}
+#disciplinas {
+    clear: both;
+}
+::selection {
+    background-color: #857482;
+    color: white;
 }
