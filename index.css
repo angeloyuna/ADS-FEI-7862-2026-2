@@ -14,26 +14,11 @@ h1, a, th, caption {
 a:hover {
     color: #c9bab1
 }
-caption {
-    margin: 0.5em;
-}
-table {
-    border-collapse: collapse;
-    margin: 1em;
-}
-th, td {
-    border: 2px solid #cab1ab;
-    padding: 1em;
-}
 input, textarea {
     background-color: #857482;
     border: solid #857482;
     color: #f2e9e4;
     margin: 0.4em;
-}
-.destaque {
-    background-color: rgb(41, 41, 71);
-    font-weight: bold;
 }
 .caixa-sagas {
     background-color:rgb(27, 27, 48);
@@ -43,6 +28,9 @@ input, textarea {
     height: 300px;
     overflow: auto;
 }
+
+/* --- Personagens/Mídias Favoritas + Mídias gostaria conhecer --- */
+
 .caixa-coluna {
     background-color:rgb(27, 27, 48);
     border: 2px solid #cab1ab;
@@ -72,10 +60,102 @@ input, textarea {
 .personagem {
     height: 300px;
 }
-#disciplinas {
-    clear: both;
+
+/* --- Barra de navegação (nav) --- */ 
+
+nav {
+    padding: 0.5em;
+}
+.nav-link {
+    border: 2px solid;
+    border-color: transparent transparent #cab1ab transparent;
+    background-color: rgb(27, 27, 48);
+    margin: 10px;
+    padding: 0.3em; 
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.nav-link:hover {
+    background-color: rgb(51, 51, 87);
+    color: #f2e9e4;
+}
+#nav-link-active {
+    background-color: rgb(51, 51, 87);
+}
+#nav-link-active:hover {
+    background-color: rgb(76, 76, 107);
 }
 ::selection {
     background-color: #857482;
     color: white;
+}
+
+/* --- Tabela IFSC --- */
+
+caption {
+    margin: 0.5em;
+}
+table {
+    border-collapse: collapse;
+    margin: 1em;
+}
+th, td {
+    border: 2px solid #cab1ab;
+    padding: 1em;
+}
+.destaque {
+    background-color: rgb(41, 41, 71);
+    font-weight: bold;
+}
+#disciplinas {
+    clear: both;
+}
+
+/* --- Grid Ícones de Saga --- */
+
+#caixa-grid-icone-saga {
+    background-color:rgb(27, 27, 48);
+    border: 2px solid #cab1ab;
+    width: 60%;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    overflow: auto;
+}
+#grid-icone-saga {
+    display: grid;
+    grid-template-rows: 220px 220px 220px 220px 220px;
+    grid-template-columns: 220px 220px 220px 220px 220px;
+    margin: 20px;
+}
+#grid-icone-saga img {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+}
+#grid-icone-saga h3 {
+    font-size: 1.05em;
+}
+.grid-icone-header {
+    position: relative;
+    bottom: 4.5em;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.grid-icone-header p {
+    margin-top: -1.2em;
+}
+
+/* --- Ícones de Saga Respectivos --- */
+
+#grid-icone-des img {
+    object-position: -160px;
+}
+#grid-icone-treze img {
+    object-position: -20px;
+}
+#grid-icone-catorze img {
+    object-position: -17px;
+}
+#grid-icone-quinze img {
+    object-position: -25px;
 }
